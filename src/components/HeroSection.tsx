@@ -55,7 +55,7 @@ const HeroSection = () => {
         {/* Photo */}
         <div className="hero-photo-wrap animate-fade-in reveal-on-scroll" style={{ animationDelay: '0.3s' }}>
           <img
-            src="/developer.png"
+            src={`${import.meta.env.BASE_URL}developer.png`}
             alt={content.name}
             className="hero-photo"
             onError={(e) => {

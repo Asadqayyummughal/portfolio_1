@@ -52,7 +52,7 @@ const Sidebar = () => {
       <header className={`topnav ${scrolled ? 'topnav--scrolled' : ''}`}>
         {/* Logo */}
         <div className="topnav__logo animate-fade-in" onClick={() => handleNavClick('home')} aria-label="Go to home">
-          <img src="/logo.png" alt="Asad Janjua Logo" className="logo-img" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Asad Janjua Logo" className="logo-img" />
         </div>
 
         {/* Nav Links */}

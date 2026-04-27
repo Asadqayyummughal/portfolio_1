@@ -23,7 +23,7 @@ export const ContentProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     const fetchUrl = import.meta.env.PROD 
-      ? '/Asad_portfolio/data.json' 
+      ? `${import.meta.env.BASE_URL}data.json` 
       : 'http://localhost:3001/api/content';
 
     fetch(fetchUrl)

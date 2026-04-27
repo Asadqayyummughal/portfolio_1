@@ -73,7 +73,7 @@ function App() {
     const hasCustomTheme = localStorage.getItem('portfolio_style_settings');
     if (hasCustomTheme) return;
 
-    extractColorsFromImage('/developer.png')
+    extractColorsFromImage(`${import.meta.env.BASE_URL}developer.png`)
       .then(palette => {
         applyPaletteToCSS(palette);
         console.log('🎨 Dynamic palette extracted:', palette);
@@ -98,7 +98,7 @@ function App() {
         <div className="curtain__panel curtain__panel--left" />
         <div className="curtain__panel curtain__panel--right" />
         <div className="curtain__logo">
-          <img src="/logo.png" alt="Logo" className="curtain-logo-img" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Logo" className="curtain-logo-img" />
         </div>
       </div>
 

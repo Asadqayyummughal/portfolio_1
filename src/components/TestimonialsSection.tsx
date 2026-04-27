@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
   const fetchTestimonials = async () => {
     try {
       const fetchUrl = import.meta.env.PROD 
-        ? '/Asad_portfolio/data.json' 
+        ? `${import.meta.env.BASE_URL}data.json` 
         : 'http://localhost:3001/api/testimonials';
 
       const res = await fetch(fetchUrl);
