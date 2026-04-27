@@ -26,4 +26,3 @@ dist-ssr
 # Project specific
 /data.json
 server.ts
-package-lock.json
